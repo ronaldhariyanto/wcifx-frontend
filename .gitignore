@@ -1,0 +1,21 @@
+# Include your project-specific ignores in this file
+
+bower_components
+node_modules
+npm-debug.log
+vendor
+system
+index.php
+
+dist
+
+application/cache
+application/config
+application/controllers
+application/core
+application/helpers
+application/hooks
+application/language
+application/libraries
+application/logs
+application/models
