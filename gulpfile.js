@@ -7,6 +7,7 @@ var concat       = require('gulp-concat');
 var flatten      = require('gulp-flatten');
 var gulp         = require('gulp');
 var gulpif       = require('gulp-if');
+var notify       = require('gulp-notify');
 var imagemin     = require('gulp-imagemin');
 var jshint       = require('gulp-jshint');
 var lazypipe     = require('lazypipe');
@@ -15,6 +16,7 @@ var merge        = require('merge-stream');
 var cssNano      = require('gulp-cssnano');
 var plumber      = require('gulp-plumber');
 var rev          = require('gulp-rev');
+var ejs          = require('gulp-ejs');
 var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
@@ -232,6 +234,15 @@ gulp.task('jshint', function() {
     .pipe(gulpif(enabled.failJSHint, jshint.reporter('fail')));
 });
 
+// ### Templates
+// `gulp ejs` - Template render partials from component to layout.
+gulp.task('templates', function() {
+  return gulp.src('./application/templates/*.ejs')
+    .pipe(ejs())
+    .pipe(gulp.dest('dist'))
+    .pipe(notify({ message: 'Templates task complete'}));
+});
+
 // ### Clean
 // `gulp clean` - Deletes the build folder entirely.
 gulp.task('clean', require('del').bind(null, [path.dist]));
@@ -244,18 +255,17 @@ gulp.task('clean', require('del').bind(null, [path.dist]));
 // See: http://www.browsersync.io
 gulp.task('watch', function() {
   browserSync.init({
-    files: ['application/views/**/*.php', '*.php'],
-    proxy: config.devUrl,
-    snippetOptions: {
-      whitelist: ['/application/views/**'],
-      blacklist: ['/system/**']
-    }
+    server: {
+      baseDir: "./dist"
+    }  
   });
+  gulp.watch(['./application/templates/**/*'], ['templates']);
   gulp.watch([path.source + 'styles/**/*'], ['styles']);
   gulp.watch([path.source + 'scripts/**/*'], ['jshint', 'scripts']);
   gulp.watch([path.source + 'fonts/**/*'], ['fonts']);
   gulp.watch([path.source + 'images/**/*'], ['images']);
   gulp.watch(['bower.json', 'assets/manifest.json'], ['build']);
+  gulp.watch("./dist/*.html").on('change', browserSync.reload);
 });
 
 // ### Build
@@ -265,6 +275,7 @@ gulp.task('build', function(callback) {
   runSequence('styles',
               'scripts',
               ['fonts', 'images'],
+              'templates',
               callback);
 });
 
