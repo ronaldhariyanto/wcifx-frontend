@@ -10,7 +10,8 @@
   "dependencies": {
     "select2": "4.0.3",
     "bootstrap-sass": "3.3.6",
-    "font-awesome": "4.6.3"
+    "font-awesome": "4.6.3",
+    "masonry": "^4.1.1"
   },
   "overrides": {
     "select2": {
@@ -49,6 +50,17 @@
         "./fonts/fontawesome-webfont.ttf",
         "./fonts/fontawesome-webfont.woff",
         "./fonts/fontawesome-webfont.woff2"
+      ]
+    },
+    "masonry": {
+      "main": [
+        "./dist/masonry.pkgd.js"
+      ]
+    },
+    "outlayer": {
+      "main": [
+        "item.js",
+        "outlayer.js"
       ]
     }
   }
