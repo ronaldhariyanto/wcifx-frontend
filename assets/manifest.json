@@ -3,7 +3,7 @@
     "main.js": {
       "files": [
         "scripts/main.js",
-        "scripts/test.js"
+        "scripts/application.js"
       ],
       "main": true
     },
