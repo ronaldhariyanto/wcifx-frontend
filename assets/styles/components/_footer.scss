@@ -2,6 +2,17 @@
   width: (100%/6);
   float: left;
   padding-right: 15px;
+  @media (max-width: $screen-sm-max) {
+    float: none;
+    width: 25%;
+  }
+  @media (max-width: $screen-xs-max) {
+    width: 50%;
+    &:nth-of-type(2n) {
+      padding-right: 0;
+      padding-left: 15px;
+    }
+  }
   &__title {
     font-family: roboto;
     color: #fff;
@@ -21,9 +32,21 @@
   }
   &--large {
     width: 20%;
+    @media (max-width: $screen-sm-max) {
+      width: 25%;
+    }
+    @media (max-width: $screen-xs-max) {
+      width: 50%;
+    }
   }
   &--small {
     width: 13%;
+    @media (max-width: $screen-sm-max) {
+      width: 25%;
+    }
+    @media (max-width: $screen-xs-max) {
+      width: 50%;
+    }
   }
 }
 
@@ -145,14 +168,17 @@
   &-company-link {
     padding: 15px 0 10px;
     @include clearfix;
+    @media (max-width: $screen-sm-max) {
+      display: flex;
+      flex-flow: wrap row;
+      align-items: baseline;
+    }
   }
   &-copyright {
     padding: 15px 0 0;
     font-family: $font-family-roboto;
     line-height: 24px;
-    text-align: center;
     b {
-      float: left;
       color: #fff;
       font-weight: 500;
     }
