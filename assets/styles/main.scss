@@ -11,5 +11,11 @@
 @import "common/global";
 @import "common/fonts";
 
-@import "components/header";
-@import "components/footer";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/front-page";
+
+@import "components/search-article";
+@import "components/popular-post";
+@import "components/category-tag";
+@import "components/news";

@@ -3,6 +3,7 @@
 }
 
 .navbar {
+  margin-bottom: 0;
   > .container {
     .navbar-brand {
       @media (min-width: $screen-sm-min) {
@@ -28,6 +29,10 @@
         line-height: 18px;
         padding-left: 35px;
         padding-right: 35px;
+        @media (max-width: $screen-sm-max) {
+          padding-right: 15px;
+          padding-left: 15px;
+        }
         &:hover,
         &:focus {
           color: $orange
