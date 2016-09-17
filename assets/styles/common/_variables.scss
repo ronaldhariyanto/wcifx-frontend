@@ -15,6 +15,9 @@ $gray:                   #444444 !default;
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
+$green:                 #05950d !default;
+$orange:                #fbb600 !default;           
+
 $brand-primary:         #05950d !default;
 $brand-success:         #05950d !default;
 $brand-info:            #5bc0de !default;
@@ -362,7 +365,7 @@ $container-lg:                 $container-desktop !default;
 //##
 
 // Basics of a navbar
-$navbar-height:                    50px !default;
+$navbar-height:                    58px !default;
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
@@ -370,8 +373,8 @@ $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2
 $navbar-collapse-max-height:       340px !default;
 
 $navbar-default-color:             #777 !default;
-$navbar-default-bg:                #f8f8f8 !default;
-$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-bg:                #fff !default;
+$navbar-default-border:            darken($navbar-default-bg, 2.5%) !default;
 
 // Navbar links
 $navbar-default-link-color:                #777 !default;
@@ -425,13 +428,13 @@ $navbar-inverse-toggle-border-color:        #333 !default;
 
 //=== Shared nav styles
 $nav-link-padding:                          10px 15px !default;
-$nav-link-hover-bg:                         $gray-lighter !default;
+$nav-link-hover-bg:                         transparent !default;
 
 $nav-disabled-link-color:                   $gray-light !default;
 $nav-disabled-link-hover-color:             $gray-light !default;
 
 //== Tabs
-$nav-tabs-border-color:                     #ddd !default;
+$nav-tabs-border-color:                     transparent !default;
 
 $nav-tabs-link-hover-border-color:          $gray-lighter !default;
 
