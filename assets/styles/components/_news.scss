@@ -58,3 +58,12 @@
     color: $orange;
   }
 }
+
+.btn-read-more {
+  padding: 8px 20px;
+
+  &:focus,
+  &:hover {
+    background-color: $green;
+  }
+}

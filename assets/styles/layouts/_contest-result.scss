@@ -1,0 +1,123 @@
+.content-result {
+  height: 450px;
+  background: url("../images/bg-world.png") no-repeat center center #f7f7f7;
+  background-size: 54%;
+  padding: 30px 0 25px;
+  &_title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-family: $font-family-roboto;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    &:after {
+      display: block;
+      content: "";
+      background: url("../images/icon-footer.png") no-repeat center;
+      height: 30px;
+      width: 240px;
+      margin: 15px auto;
+    }
+    b {
+      font-weight: 600;
+      text-transform: lowercase;
+      font-size: 24px;
+    }
+  }
+  &-left {
+    width: 66%;
+    margin-right: 2%;
+    float: left;
+  }
+  &-right {
+    width: 32%;
+    float: left;
+    &__title {
+      background-color: $orange;
+      color: #fff;
+      text-align: center;
+      font-family: roboto;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 6px 10px;
+    }
+  }
+  .nav-tabs {
+    >li {
+      background-color: $orange;
+      width: (100%/3);
+      >a {
+        background-color: $orange;
+        margin-right: 2px;
+        line-height: 24px;
+        border-radius: 0;
+        border: none;
+        color: #fff;
+        font-family: roboto;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 5px 20px;
+        text-align: center;
+        &:hover {
+          background-color: #f5ca58;
+        }
+      }
+      &.active {
+        a,
+        a:focus,
+        a:hover {
+          color: #fff;
+          background-color: #f5ca58;
+          border: none;
+        }
+      }
+    }
+  }
+  .tab-content {
+    >.tab-pane {
+      padding: 10px;
+      background-color: #e7e6e6;
+    }
+  }
+  .table {
+    background-color: #e7e6e6;
+    margin-bottom: 0;
+    font-family: $font-family-roboto;
+    font-weight: 300;
+    color: #898686;
+    th {
+      color: #898686;
+      font-weight: 600;
+    }
+    b {
+      color: $green;
+    }
+    .btn {
+      padding: 2px 20px;
+    }
+    tfoot {
+      color: #4d4d4d;
+      font-size: 10px;
+      font-weight: 400;
+    }
+  }
+  &__table {
+    &-image {
+      float: left;
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+      font-size: 20px;
+      color: #4d4c4d;
+    }
+    &-data {
+      float: left;
+      span {
+        display: block;
+      }
+    }
+  }
+}

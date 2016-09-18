@@ -6,3 +6,5 @@ $('.front-news').masonry({
   itemSelector: '.front-news__item',
   columnWidth: 310
 });
+
+$('#scene').parallax();

@@ -14,8 +14,10 @@
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/front-page";
+@import "layouts/contest-result";
 
 @import "components/search-article";
 @import "components/popular-post";
 @import "components/category-tag";
 @import "components/news";
+@import "components/spinner";
