@@ -1,0 +1,85 @@
+:focus {
+  outline: none;
+}
+
+.navbar {
+  margin-bottom: 0;
+  > .container {
+    .navbar-brand {
+      @media (min-width: $screen-sm-min) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.navbar-brand {
+  padding: 10px;
+}
+
+.navbar-default {
+  .navbar-nav {
+    > li {
+      > a {
+        color: $green;
+        font-family: $font-family-roboto;
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 18px;
+        padding-left: 35px;
+        padding-right: 35px;
+        @media (max-width: $screen-sm-max) {
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+        &:hover,
+        &:focus {
+          color: $orange
+        }
+      }
+    }
+    > .open {
+      > a {
+        background-color: transparent;
+        color: $orange;
+        &:focus,
+        &:hover {
+          background-color: transparent;
+          color: $orange;
+        }
+      }
+    }
+    > .active {
+      > a {
+        background-color: transparent;
+        color: $orange;
+        &:focus,
+        &:hover {
+          background-color: transparent;
+          color: $orange;
+        }
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  padding: 0;
+  border-top: 3px solid $orange;
+  > li {
+    > a {
+      padding: 0 20px;
+      line-height: 32px;
+      color: $green;
+      font-size: 14px;
+      font-family: $font-family-roboto;
+
+      &:focus,
+      &:hover {
+        color: #fff;
+        background-color: $orange;
+      }
+    }
+  }
+}

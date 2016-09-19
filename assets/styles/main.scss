@@ -2,9 +2,22 @@
 
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
+@import "../../bower_components/select2/src/scss/core.scss";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
 @import "common/mixins";
 @import "common/global";
 @import "common/fonts";
+
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/front-page";
+@import "layouts/contest-result";
+
+@import "components/search-article";
+@import "components/popular-post";
+@import "components/category-tag";
+@import "components/news";
+@import "components/spinner";
