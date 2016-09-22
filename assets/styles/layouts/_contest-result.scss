@@ -13,14 +13,6 @@
     letter-spacing: 0.7px;
     margin-top: 0;
     margin-bottom: 15px;
-    &:after {
-      display: block;
-      content: "";
-      background: url("../images/icon-footer.png") no-repeat center;
-      height: 30px;
-      width: 240px;
-      margin: 15px auto;
-    }
     b {
       font-weight: 600;
       text-transform: lowercase;
