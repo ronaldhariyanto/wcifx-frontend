@@ -1,4 +1,4 @@
-@mixin clearfix() {
+@mixin clearfix {
   &:before,
   &:after {
     content: " ";
@@ -6,5 +6,23 @@
   }
   &:after {
     clear: both;
+  }
+}
+
+@mixin headtitle {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  font-family: $font-family-roboto;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  b {
+    font-weight: 700;
+    text-transform: lowercase;
+    font-size: 24px;
+    margin-left: 5px;
   }
 }

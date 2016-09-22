@@ -18,10 +18,10 @@ $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 $green:                 #05950d !default;
 $orange:                #fbb600 !default;           
 
-$brand-primary:         #05950d !default;
-$brand-success:         #05950d !default;
+$brand-primary:         $green !default;
+$brand-success:         $green !default;
 $brand-info:            #5bc0de !default;
-$brand-warning:         #fbb600 !default;
+$brand-warning:         $orange !default;
 $brand-danger:          #d9534f !default;
 
 
@@ -882,3 +882,9 @@ $hr-border:                   $gray-lighter !default;
 
 $slick-font-path: "../fonts/" !default;
 $slick-loader-path: "../images/" !default;
+$slick-font-family: "FontAwesome" !default;
+$slick-arrow-color: white !default;
+$slick-prev-character: "\f104" !default;
+$slick-next-character: "\f105" !default;
+$slick-dot-character: "\f111" !default;
+
