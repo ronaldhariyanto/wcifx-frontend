@@ -1,10 +1,22 @@
-$('.select2').select2({
-  minimumResultsForSearch: Infinity
+$('.slider-homepage').slick();
+
+$('.slider-services').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1
 });
 
-$('.front-news').masonry({
-  itemSelector: '.front-news__item',
-  columnWidth: 310
-});
+$('.news-slider').slick();
 
 $('#scene').parallax();
+
+$(document).ready(function() {
+  $('.select2').select2({
+    minimumResultsForSearch: Infinity
+  });
+
+  $('.diary-news').masonry({
+    itemSelector: '.news--items',
+    columnWidth: 310
+  });
+})

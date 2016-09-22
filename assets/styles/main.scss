@@ -5,6 +5,8 @@
 @import "../../bower_components/select2/src/scss/core.scss";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+@import "../../bower_components/slick-carousel/slick/slick-theme.scss";
 // endbower
 
 @import "common/mixins";
@@ -13,11 +15,13 @@
 
 @import "layouts/header";
 @import "layouts/footer";
-@import "layouts/front-page";
+@import "layouts/news";
 @import "layouts/contest-result";
 
+@import "components/slider";
 @import "components/search-article";
 @import "components/popular-post";
 @import "components/category-tag";
 @import "components/news";
 @import "components/spinner";
+@import "components/social-link";
