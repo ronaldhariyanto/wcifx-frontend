@@ -1,8 +1,24 @@
-.front-news__item {
+.news--items {
   width: 300px;
   margin-right: 10px;
   &:nth-of-type(2n) {
     margin-right: 0;
+  }
+}
+
+.news-slider {
+  .slick-next,
+  .slick-prev {
+    z-index: 2;
+    &:before {
+      font-size: 40px;
+    }
+  }
+  .slick-prev {
+    left: 10px;
+  }
+  .slick-next {
+    right: 30px;
   }
 }
 

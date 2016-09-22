@@ -1,0 +1,16 @@
+.slider-homepage {
+  .slick-prev {
+    left: 0;
+  }
+  .slick-next {
+    right: 0;
+  }
+}
+.slider-homepage-item {
+  height: 480px;
+  border: 1px solid red;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
