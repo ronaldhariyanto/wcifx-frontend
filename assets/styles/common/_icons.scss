@@ -1,0 +1,46 @@
+@mixin icon-large {
+  width: 50px;
+  height: 50px;
+}
+
+@mixin icon-small {
+  width: 20px;
+  height: 20px;
+}
+
+.icons {
+  display: inline-block;
+  background-image: url("../images/icon-sprites.png");
+  background-repeat: no-repeat;
+
+  &--block {
+    display: block;
+    margin: 15px 0 20px;
+  }
+  
+  &--computer {
+    @include icon-large();
+    background-position: -10px -95px;
+  }
+
+  &--money {
+    @include icon-large();
+    background-position: -80px -95px;
+  }
+
+  &--rewards {
+    @include icon-large();
+    background-position: -150px -95px;
+  }
+
+  &--graffic {
+    @include icon-large();
+    background-position: -220px -95px;   
+  }
+
+  &--seperator {
+    background-image: url("../images/icon-seperator.png");
+    height: 20px;
+    background-position: center;
+  }
+}
