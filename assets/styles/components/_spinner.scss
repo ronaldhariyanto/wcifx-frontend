@@ -1,6 +1,6 @@
 .spinner {
   display: none;
-  width: 100px;
+  width: 120px;
   margin: 30px auto;
   text-align: center;
   > div {
@@ -30,6 +30,7 @@
     display: block;
     text-transform: uppercase;
     margin-top: 10px;
+    font-size: 14px;
   }
 }
 
