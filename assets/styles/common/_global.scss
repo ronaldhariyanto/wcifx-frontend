@@ -83,3 +83,21 @@
     }
   }
 }
+
+.headtitle {
+  @include headtitle();
+}
+
+.bg-grafity {
+  background-image: url("../images/bg-grafity.png"), url("../images/bg-phones.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 40px, center bottom;
+}
+
+.seperator {
+  &--full {
+    .icons {
+      width: 100%;
+    }
+  }
+}

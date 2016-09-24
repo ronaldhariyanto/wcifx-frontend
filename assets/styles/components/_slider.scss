@@ -1,14 +1,28 @@
+@mixin slider-arrow-home {
+  z-index: 2;
+  border: 1px solid #fff;
+  width: 50px;
+  height: 50px;
+
+  &:before {
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+  }
+}
+
 .slider-homepage {
   .slick-prev {
     left: 0;
+    @include slider-arrow-home();
   }
   .slick-next {
     right: 0;
+    @include slider-arrow-home();
   }
 }
 .slider-homepage-item {
   height: 480px;
-  border: 1px solid red;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
