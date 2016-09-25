@@ -77,9 +77,47 @@
 
 .btn-read-more {
   padding: 8px 20px;
-
   &:focus,
   &:hover {
     background-color: $green;
+  }
+}
+
+.news-headline {
+  margin: 0 0 20px;
+  color: $green;
+  font-family: $font-family-roboto;
+  font-weight: $font-semibold;
+  font-size: 18px;
+  letter-spacing: 0.7px;
+  line-height: 24px;
+}
+
+.news-meta {
+  margin-bottom: 30px;
+  font-family: $font-family-roboto;
+  font-weight: $font-light;
+  letter-spacing: 0.4px;
+  color: #303030;
+  &__time {
+    margin-right: 30px;
+  }
+  &__author {
+    a {
+      color: $orange;
+      font-weight: $font-semibold;
+    }
+  }
+}
+
+.news__content {
+  &--full {
+    color: #626161;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 30px;
+    p {
+      margin-bottom: 30px;
+    }
   }
 }

@@ -1,41 +1,4 @@
-.benefit-headtitle {
-  font-weight: 600;
-  color: #05950d;
-  text-transform: uppercase;
-  font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 0;
-  a {
-    display: block;
-    padding: 30px 20px 20px;
-  }
-}
-
-.benefit-tab-header {
-  background-color: #edefef;
-  .nav-tabs > li {
-    padding-left: 0;
-    padding-right: 0;
-    &.active,
-    &:hover,
-    &:active {
-      a {
-        background-color: #fff;
-        transition: all 0.5s ease;
-      }
-    }
-  }
-}
-
-.benefit-sublabel {
-  display: block;
-  font-weight: normal;
-  font-size: 12px;
-  text-transform: none;
-  color: #616363;
-}
-
-.benefit-tabs-content {
+.benefit-container {
   padding: 45px 0 40px;
   min-height: 680px;
 }
@@ -64,11 +27,29 @@
       border-bottom: 1px solid transparent;
       padding: 15px 20px;
       margin-bottom: 15px;
+      position: relative;
+      &:after {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-top-color: $green;
+        border-width: 10px;
+        margin-left: -10px;
+        opacity: 0;
+      }
       &:hover,
       &:active {
         border-color: $green;
         cursor: pointer;
         transition: all 0.5s ease;
+        &:after {
+          opacity: 1;
+        }
       }
     }
   }
@@ -96,12 +77,29 @@
     list-style: none;
   }
   &__title {
-    font-family: roboto;
-    font-weight: 300;
+    font-family: $font-family-roboto;
+    font-weight: $font-light;
     font-size: 16px;
     text-transform: uppercase;
     line-height: 1;
     margin: 0 0 15px;
+    position: relative;
+    &:after {
+      display: inline-block;
+      content: "";
+      border-top: 1px solid #d7dada;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+    span {
+      display: inline-block;
+      background-color: #fff;
+      z-index: 2;
+      position: relative;
+      padding-right: 15px;
+    }
   }
   &__item {
     margin-bottom: 10px;
@@ -114,6 +112,9 @@
       border-radius: 50%;
       margin-right: 10px;
       color: #fcc638;
+      width: 26px;
+      height: 26px;
+      text-align: center;
     }
   }
 }
