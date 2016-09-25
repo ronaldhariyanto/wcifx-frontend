@@ -12,9 +12,13 @@ $(document).ready(function() {
 
   $('.slider-homepage').slick();
 
+  $('.slider-nav--action li a').eq(0).addClass('active');
+
   $('.slider-nav--action li a').click(function(e){
     e.preventDefault();
+    $('.slider-nav--action li a').removeClass('active');
     var slideIndex = $('.slider-nav--action li a').index(this);
+    $('.slider-nav--action li a').eq(parseInt(slideIndex)).addClass('active');
     $('.slider-homepage').slick('slickGoTo', parseInt(slideIndex));
   });
 
