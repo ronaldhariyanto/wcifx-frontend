@@ -1,5 +1,7 @@
 $('.parallax-window').parallax({imageSrc: 'images/bg-parrallax-01.jpg'});
 
+$('.parallax-window--news').parallax({imageSrc: 'images/bg-news.jpg'});
+
 $('.our-services--homepage').parallax({
   imageSrc: 'images/slide-home-bg2.jpg',
   naturalWidth: '1440px'

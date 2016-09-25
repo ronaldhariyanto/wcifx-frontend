@@ -1,4 +1,5 @@
-:focus {
+:focus,
+.btn:focus {
   outline: none;
 }
 
@@ -74,7 +75,6 @@
       color: $green;
       font-size: 14px;
       font-family: $font-family-roboto;
-
       &:focus,
       &:hover {
         color: #fff;
@@ -100,4 +100,11 @@
       width: 100%;
     }
   }
+}
+
+.breadcrumb {
+  font-family: $font-family-roboto;
+  font-weight: $font-semibold;
+  font-size: 14px;
+  text-align: right;
 }
