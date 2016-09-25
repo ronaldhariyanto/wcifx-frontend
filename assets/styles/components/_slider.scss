@@ -3,11 +3,15 @@
   border: 1px solid #fff;
   width: 50px;
   height: 50px;
-
   &:before {
     font-size: 30px;
     line-height: 50px;
     text-align: center;
+  }
+  &:hover,
+  &:active {
+    background-color: #10941a;
+    border-color: #10941a;
   }
 }
 
@@ -21,6 +25,7 @@
     @include slider-arrow-home();
   }
 }
+
 .slider-homepage-item {
   height: 480px;
   background-repeat: no-repeat;
@@ -28,3 +33,29 @@
   background-size: cover;
 }
 
+.silder-home-content {
+  margin-top: 35%;
+  h4 {
+    color: #05950d;
+    font-family: $font-family-roboto;
+    font-weight: $font-bold;
+    font-size: 18px;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 14px;
+    color: #545353;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+  }
+}
+
+.slider-home-action {
+  .btn {
+    font-size: 14px;
+    margin-right: 20px;
+  }
+}
