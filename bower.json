@@ -8,14 +8,19 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "parallax.js": "^1.4.2",
     "select2": "4.0.3",
     "bootstrap-sass": "3.3.6",
     "font-awesome": "4.6.3",
     "masonry": "^4.1.1",
-    "parallax": "^2.1.3",
     "slick-carousel": "1.6.0"
   },
   "overrides": {
+    "parallax.js": {
+      "main": [
+        "./parallax.js"
+      ]
+    },
     "select2": {
       "main": [
         "./src/scss/core.scss",
@@ -61,25 +66,20 @@
     },
     "outlayer": {
       "main": [
-        "item.js",
-        "outlayer.js"
-      ]
-    },
-    "parallax": {
-      "main": [
-        "deploy/jquery.parallax.js"
+        "./item.js",
+        "./outlayer.js"
       ]
     },
      "slick-carousel": {
        "main": [
-         "slick/slick.scss",
-         "slick/slick-theme.scss",
-         "slick/slick.js",
-         "slick/ajax-loader.gif",
-         "slick/fonts/slick.eot",
-         "slick/fonts/slick.ttf",
-         "slick/fonts/slick.woff",
-         "slick/fonts/slick.svg"
+         "./slick/slick.scss",
+         "./slick/slick-theme.scss",
+         "./slick/slick.js",
+         "./slick/ajax-loader.gif",
+         "./slick/fonts/slick.eot",
+         "./slick/fonts/slick.ttf",
+         "./slick/fonts/slick.woff",
+         "./slick/fonts/slick.svg"
        ]
      }
   }
