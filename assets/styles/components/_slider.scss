@@ -39,16 +39,17 @@
     color: #05950d;
     font-family: $font-family-roboto;
     font-weight: $font-bold;
-    font-size: 18px;
-    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
-    line-height: 24px;
+    font-size: 30px;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+    line-height: 1.33;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   p {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 1.33;
     color: #545353;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     margin-bottom: 30px;
   }
 }

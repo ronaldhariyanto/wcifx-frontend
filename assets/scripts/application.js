@@ -1,6 +1,6 @@
-$('.parallax-window').parallax({imageSrc: 'images/bg-parrallax-01.jpg'});
+$('.parallax-window').parallax({ imageSrc: 'images/bg-parrallax-01.jpg' });
 
-$('.parallax-window--news').parallax({imageSrc: 'images/bg-news.jpg'});
+$('.parallax-window--news').parallax({ imageSrc: 'images/bg-news.jpg' });
 
 $('.our-services--homepage').parallax({
   imageSrc: 'images/slide-home-bg2.jpg',
@@ -16,7 +16,7 @@ $(document).ready(function() {
 
   $('.slider-nav--action li a').eq(0).addClass('active');
 
-  $('.slider-nav--action li a').click(function(e){
+  $('.slider-nav--action li a').click(function(e) {
     e.preventDefault();
     $('.slider-nav--action li a').removeClass('active');
     var slideIndex = $('.slider-nav--action li a').index(this);
@@ -36,4 +36,14 @@ $(document).ready(function() {
     itemSelector: '.news--items',
     columnWidth: 310
   });
+
+  $('.our-services-box').hover(function() {
+    $(this).find('i').toggleClass('active');
+  });
+
+  $('.news-like__action').click(function() {
+    $(this).toggleClass('active');
+    $(this).find('i').toggleClass('fa-heart-o').toggleClass('fa-heart');
+  });
+
 });

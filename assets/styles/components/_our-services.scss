@@ -26,6 +26,10 @@
     &:hover,
     &:active {
       background-color: $green;
+
+      .our-services__label {
+        color: #fff;
+      }
     }
   }
   &__title {

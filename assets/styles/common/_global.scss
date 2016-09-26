@@ -108,3 +108,10 @@
   font-size: 14px;
   text-align: right;
 }
+
+.btn-primary {
+  &:hover,
+  &:focus {
+    background-color: $green;
+  }
+}
