@@ -21,21 +21,33 @@
   &--computer {
     @include icon-large();
     background-position: -10px -95px;
+    &.active {
+      background-position: -10px -165px;
+    }
   }
 
   &--money {
     @include icon-large();
     background-position: -80px -95px;
+    &.active {
+      background-position: -80px -165px;
+    }
   }
 
   &--rewards {
     @include icon-large();
     background-position: -150px -95px;
+    &.active {
+      background-position: -150px -165px;
+    }
   }
 
   &--graffic {
     @include icon-large();
-    background-position: -220px -95px;   
+    background-position: -220px -95px;
+    &.active {
+      background-position: -220px -165px;
+    }   
   }
 
   &--seperator {
