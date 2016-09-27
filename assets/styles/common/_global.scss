@@ -115,3 +115,28 @@
     background-color: $green;
   }
 }
+
+.pagination {
+  margin: 40px 0 0;
+  > li {
+    a,
+    span {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    &:first-child {
+      > a, 
+      > span {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+      }
+    }
+    &:last-child {
+      > a,
+      > span {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+  }
+}

@@ -130,6 +130,12 @@
   font-size: 18px;
   letter-spacing: 0.7px;
   line-height: 24px;
+  &__image {
+    margin-bottom: 40px;
+  }
+  &-action {
+    margin-bottom: 40px;
+  }
 }
 
 .news-meta {
@@ -158,6 +164,29 @@
     p {
       margin-bottom: 30px;
     }
+  }
+  &--headline {
+    color: #7d7d7d;
+    margin-bottom: 40px;
+  }
+  &--article {
+    color: #7d7d7d;
+  }
+}
+
+.news-article {
+  margin-top: 40px;
+  &__headline {
+    margin-top: 0;
+    font-size: 16px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: normal;
+    line-height: 24px;
+    margin-bottom: 15px;
+    color: $green;
+  }
+  .news-meta {
+    margin-bottom: 15px;
   }
 }
 
