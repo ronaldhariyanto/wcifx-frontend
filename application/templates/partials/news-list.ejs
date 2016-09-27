@@ -1,0 +1,27 @@
+<div class="container news-container">
+  <div class="row">
+    <div class="col-md-4 news-content news-content--left">
+      <% include ../components/search-article %>
+
+      <% include popular-post %>
+      
+      <% include ../components/category-tag %>
+    </div>
+
+    <div class="col-md-8 news-content news-content--right">
+
+      <h2 class="news__title news__title--primary">NEWS LIST PAGES</h2>
+
+      <% include ../components/news-list-headline %>
+      
+      <section class="news-list-container">
+        <% include ../components/news-list-item %>
+        <% include ../components/news-list-item %>
+        <% include ../components/news-list-item %>
+        <% include ../components/news-list-item %>
+      </section>
+      
+      <% include ../components/pagination %>
+    </div>
+  </div>
+</div>
