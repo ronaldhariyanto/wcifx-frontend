@@ -88,11 +88,27 @@
   @include headtitle();
 }
 
+.subheadtitle {
+  text-align: center;
+  color: #484848;
+  font-family: $font-family-roboto;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 5px 0 30px;
+}
+
 .bg-grafity {
   background-image: url("../images/bg-grafity.png"), url("../images/bg-phones.png");
   background-repeat: no-repeat, no-repeat;
   background-position: center 40px, center bottom;
 }
+
+.bg-graffic {
+  background-image: url("../images/bg-grafity.png");
+  background-repeat: no-repeat;
+  background-position: center 40px;
+}
+
 
 .seperator {
   &--full {

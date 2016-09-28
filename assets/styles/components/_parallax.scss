@@ -2,9 +2,8 @@
   min-height: 300px;
   background: transparent;
 
-  &--news {
-    min-height: 300px;
-    background: transparent;
+  &--news,
+  &--about {
     padding-top: 15vh;
 
     .breadcrumb {
