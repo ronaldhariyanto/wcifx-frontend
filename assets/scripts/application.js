@@ -1,6 +1,8 @@
-$('.parallax-window').parallax({ imageSrc: 'images/bg-parrallax-01.jpg' });
+$('.parallax-window--diary').parallax({ imageSrc: 'images/bg-parrallax-01.jpg' });
 
 $('.parallax-window--news').parallax({ imageSrc: 'images/bg-news.jpg' });
+
+$('.parallax-window--about').parallax({ imageSrc: 'images/bg-about.jpg' });
 
 $('.our-services--homepage').parallax({
   imageSrc: 'images/slide-home-bg2.jpg',

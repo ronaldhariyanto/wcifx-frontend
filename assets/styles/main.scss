@@ -18,6 +18,7 @@
 @import "layouts/footer";
 @import "layouts/news";
 @import "layouts/contest-result";
+@import "layouts/about-us";
 
 @import "components/slider";
 @import "components/parallax";
@@ -30,3 +31,6 @@
 @import "components/our-services";
 @import "components/benefits";
 @import "components/generate-password";
+@import "components/question-box";
+
+@import "common/helper";
