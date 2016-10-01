@@ -104,6 +104,30 @@
     background-position: -396px -20px;
   }
 
+  &--signin {
+    width: 60px;
+    height: 60px;
+    background-position: -496px -91px;
+  }
+
+  &--account {
+    width: 60px;
+    height: 60px;
+    background-position: -426px -91px;
+  }
+
+  &--fee {
+    width: 60px;
+    height: 60px;
+    background-position: -286px -91px;
+  }
+
+  &--contest {
+    width: 60px;
+    height: 60px;
+    background-position: -356px -91px;   
+  }
+
 
   &--seperator {
     background-image: url("../images/icon-seperator.png");
@@ -112,6 +136,7 @@
 
     &--small {
       background-size: 150px;
+      width: 120px;
     }
   }
 }
