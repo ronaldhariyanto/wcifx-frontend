@@ -4,6 +4,10 @@ $('.parallax-window--news').parallax({ imageSrc: 'images/bg-news.jpg' });
 
 $('.parallax-window--about').parallax({ imageSrc: 'images/bg-about.jpg' });
 
+$('.parallax-window--contest').parallax({ imageSrc: 'images/bg-contest.jpg' });
+
+$('.parallax-contest').parallax({ imageSrc: 'images/bg-contest-03.jpg' });
+
 $('.our-services--homepage').parallax({
   imageSrc: 'images/slide-home-bg2.jpg',
   naturalWidth: '1440px'
