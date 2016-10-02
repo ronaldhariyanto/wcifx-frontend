@@ -13,7 +13,8 @@
     "bootstrap-sass": "3.3.6",
     "font-awesome": "4.6.3",
     "masonry": "^4.1.1",
-    "slick-carousel": "1.6.0"
+    "slick-carousel": "1.6.0",
+    "chartist": "^0.9.8"
   },
   "overrides": {
     "parallax.js": {
@@ -70,17 +71,23 @@
         "./outlayer.js"
       ]
     },
-     "slick-carousel": {
-       "main": [
-         "./slick/slick.scss",
-         "./slick/slick-theme.scss",
-         "./slick/slick.js",
-         "./slick/ajax-loader.gif",
-         "./slick/fonts/slick.eot",
-         "./slick/fonts/slick.ttf",
-         "./slick/fonts/slick.woff",
-         "./slick/fonts/slick.svg"
-       ]
-     }
+    "slick-carousel": {
+      "main": [
+        "./slick/slick.scss",
+        "./slick/slick-theme.scss",
+        "./slick/slick.js",
+        "./slick/ajax-loader.gif",
+        "./slick/fonts/slick.eot",
+        "./slick/fonts/slick.ttf",
+        "./slick/fonts/slick.woff",
+        "./slick/fonts/slick.svg"
+      ]
+    },
+    "chartist": {
+      "main": [
+        "./dist/scss/chartist.scss",
+        "./dist/chartist.js"
+      ]
+    }
   }
 }

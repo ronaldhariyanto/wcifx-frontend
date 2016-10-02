@@ -97,6 +97,14 @@
   margin: 5px 0 30px;
 }
 
+.headline {
+  @include headline();
+}
+
+.subheadline {
+  @include subheadline();
+}
+
 .bg-grafity {
   background-image: url("../images/bg-grafity.png"), url("../images/bg-phones.png");
   background-repeat: no-repeat, no-repeat;

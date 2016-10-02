@@ -90,33 +90,10 @@
     }
   }
   &__headline {
-    font-family: $font-family-roboto;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 18px;
-    color: #787171;
-    margin-top: 0;
-    margin-bottom: 30px;
-    b {
-      font-weight: 700;
-    }
+    @include headline();
   }
   &__subheadline {
-    font-family: $font-family-roboto;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 16px;
-    color: #787171;
-    margin-top: 0;
-    margin-bottom: 30px;
-    b {
-      font-weight: 700;
-    }
-    > .icons--seperator {
-      margin-left: 20px;
-      position: relative;
-      top: 4px;
-    }
+    @include subheadline();
   }
   &-part {
     margin-bottom: 0;
