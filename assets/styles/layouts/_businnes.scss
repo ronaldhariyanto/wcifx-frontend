@@ -1,0 +1,44 @@
+.businnes {
+  &-content {
+    padding: 40px 20px;
+    &--right {
+      border-left: 1px solid #babcbc;
+    }
+    p {
+      font-family: $font-family-roboto;
+      font-weight: 300;
+      font-size: 14px;
+      color: #070707;
+      margin-bottom: 30px;
+      line-height: 24px;
+    }
+  }
+  &-gotolink {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+    li {
+      border-bottom: 1px solid #babcbc;
+      padding-right: 25px;
+      position: relative;
+      &:after {
+        display: inline-block;
+        content: "\f105";
+        font-family: "FontAwesome";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -8px;
+        margin-right: 10px;
+      }
+    }
+  }
+  a {
+    display: block;
+    text-transform: uppercase;
+    font-family: roboto;
+    font-weight: 300;
+    color: #a1a2a2;
+    padding: 15px 0;
+  }
+}
