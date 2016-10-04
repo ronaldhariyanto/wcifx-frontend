@@ -18,6 +18,11 @@
         "scripts/customizer.js"
       ]
     },
+    "chart.js": {
+      "files": [
+        "scripts/chart.js"
+      ]
+    },
     "jquery.js": {
       "bower": ["jquery"]
     }
