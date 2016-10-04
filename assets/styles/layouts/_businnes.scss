@@ -54,7 +54,6 @@
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
-
     li {
       margin-bottom: 15px;
       font-family: $font-family-roboto;
@@ -62,7 +61,6 @@
       font-size: 14px;
       line-height: 1;
       color: #3b3c3c;
-
       i {
         font-size: 18px;
         color: $orange;
@@ -71,5 +69,20 @@
         top: 4px;
       }
     }
+  }
+}
+
+.chart-info {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+  li {
+    font-size: 14px;
+    font-family: roboto;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  i {
+    margin-right: 5px;
   }
 }
