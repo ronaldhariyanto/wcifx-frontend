@@ -1,0 +1,96 @@
+.partnership {
+  &-benefit {
+    background: url('../images/bg-contest-02.png') no-repeat center bottom;
+    background-size: cover;
+    color: #fff;
+    padding: 15px 0 30px;
+    &-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      display: flex;
+      flex-flow: wrap row;
+      justify-content: space-between;
+    }
+    &__item {
+      min-width: 160px;
+      text-align: center;
+      &:last-child {
+        .partnership-benefit__title:after {
+          display: none;
+        }
+      }
+    }
+    &__icons {
+      display: block;
+      height: 40px;
+      margin-bottom: 5px;
+    }
+    &__title {
+      display: block;
+      border: 2px solid #fff;
+      padding: 15px;
+      font-size: 18px;
+      font-family: roboto;
+      font-weight: 500;
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        border-bottom: 2px solid #fff;
+        position: absolute;
+        top: 50%;
+        right: -32px;
+        z-index: 9;
+        width: 36px;
+      }
+    }
+  }
+  &-content {
+    padding: 60px 0;
+    h2 {
+      margin: 0 0 30px;
+      font-size: 16px;
+      font-family: $font-family-roboto;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+      line-height: 1;
+    }
+    p {
+      color: #6a6a6a;
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  }
+  &-statistics {
+    background: url('../images/bg-partnership-03.jpg') no-repeat center top;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    font-family: $font-family-roboto;
+    padding: 40px 0;
+    h3 {
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 18px;
+      letter-spacing: 0.7px;
+      margin: 0 0 60px;
+      margin-bottom: 20vh;
+    }
+    h4 {
+      margin: 0 0 30px;
+      font-size: 28px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.33;
+      margin-bottom: 60px;
+    }
+  }
+}
