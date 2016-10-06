@@ -1,3 +1,5 @@
+// Helpers for margin ==> (s = small, m = medium, l = large)
+
 .mbs {
   margin-bottom: 10px;
 }
@@ -20,6 +22,32 @@
 
 .mtl {
   margin-top: 40px;
+}
+
+// Helpers for padding ==> (s = small, m = medium, l = large)
+
+.pbs {
+  padding-bottom: 10px;
+}
+
+.pbm {
+  padding-bottom: 20px;
+}
+
+.pbl {
+  padding-bottom: 40px;
+}
+
+.pts {
+  padding-top: 10px;
+}
+
+.ptm {
+  padding-top: 20px;
+}
+
+.ptl {
+  padding-top: 40px;
 }
 
 .block-center {
