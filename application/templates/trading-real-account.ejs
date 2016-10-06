@@ -20,7 +20,7 @@
       </div>
     </section>
 
-    <div class="container ptl pbl">
+    <div class="trading container ptl pbl">
       <div class="row">
         <div class="col-md-12">
           <h4 class="headtitle">Forex demo <b>account</b></h4>
@@ -30,28 +30,37 @@
       </div>
     </div>
 
-    <section>
+    <section class="trading trading-step">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            Registration
-
-            Access
-
-            Trading
+            <ul class="trading-step--list">
+              <li class="trading-step__item">
+                <span class="trading-step__icons"><i class="icons icons-trading--registration"></i></span>
+                <span class="trading-step__label">Registration</span>
+              </li>
+              <li class="trading-step__item">
+                <span class="trading-step__icons"><i class="icons icons-trading--access"></i></span>
+                <span class="trading-step__label">Access</span>
+              </li>
+              <li class="trading-step__item">
+                <span class="trading-step__icons"><i class="icons icons-trading--trading"></i></span>
+                <span class="trading-step__label">Trading</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-
+    <section class="trading trading-registration">
       <div class="container ptl pbl">
         <div class="row">
           <div class="col-md-12">
             <h4 class="headtitle">Registration</h4>
             <div class="seperator seperator--full mbl"><i class="icons icons--seperator"></i></div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <form class="form-horizontal">
               <div class="form-group">
                 <label for="firstDeposit" class="col-sm-offset-1 col-sm-4 control-label">First deposit:</label>
@@ -106,18 +115,20 @@
               </div>
             </form>
           </div>
-          <div class="col-md-6">
-            <ul class="checklist">
-              <li>More than 60 instruments (currencies, gold, silver)</li>
-              <li>Prices in real time</li>
-              <li>Trading platform MetaTrader 4</li>
-              <li>Trading platform in English language</li>
-              <li>Wide range of indicators</li>
+          <div class="col-md-5 col-md-offset-1">
+            <ul class="checklist mbm">
+              <li><i class="glyphicon glyphicon-ok-circle"></i> More than 60 instruments (currencies, gold, silver)</li>
+              <li><i class="glyphicon glyphicon-ok-circle"></i> Prices in real time</li>
+              <li><i class="glyphicon glyphicon-ok-circle"></i> Trading platform MetaTrader 4</li>
+              <li><i class="glyphicon glyphicon-ok-circle"></i> Trading platform in English language</li>
+              <li><i class="glyphicon glyphicon-ok-circle"></i> Wide range of indicators</li>
             </ul>
-            <p>All the information and instructions necessary for opening a demo account will be sent to your personal e-mail address. If you have any questions, feel free to contact our customer support in a manner convenient to you.</p>
+            <p class="contens">All the information and instructions necessary for opening a demo account will be sent to your personal e-mail address. If you have any questions, feel free to contact our customer support in a manner convenient to you.</p>
           </div>
         </div>
       </div>
+    </section>
+      
 
     <% include partials/footer %>
 

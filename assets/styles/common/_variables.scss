@@ -32,7 +32,7 @@ $brand-danger:          #d9534f !default;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            $gray !default;
+$text-color:            #616363 !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
@@ -191,17 +191,17 @@ $btn-border-radius-small:        0 !default;
 $input-bg:                       #fff !default;
 $input-bg-disabled:              $gray-lighter !default;
 $input-color:                    #7d7c7c !default;
-$input-border:                   #ededed !default;
+$input-border:                   #e4e4e4 !default;
 
 $input-border-radius:            0 !default;
 $input-border-radius-large:      0 !default;
 $input-border-radius-small:      0 !default;
-$input-border-focus:             #ededed !default;
+$input-border-focus:             #e4e4e4 !default;
 
 
 $input-color-placeholder:        #7d7c7c !default;
 
-$input-height-base:              40px !default;
+$input-height-base:              34px !default;
 $input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
 $input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
 

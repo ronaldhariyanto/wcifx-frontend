@@ -13,6 +13,12 @@
   height: 40px;
 }
 
+@mixin icon-trading {
+  width: 60px;
+  height: 60px;
+}
+
+
 .icons {
   display: inline-block;
   background-image: url("../images/icon-sprites.png");
@@ -133,6 +139,21 @@
     &--contests {
       @include icon-benefit();
       background-position: -530px -160px;
+    }
+  }
+
+  &-trading {
+    &--registration {
+      background-position: -170px -235px;
+      @include icon-trading();
+    }
+    &--access {
+      background-position: -90px -235px;
+      @include icon-trading();
+    }
+    &--trading {
+      background-position: -10px -235px;
+      @include icon-trading();
     }
   }
   &--seperator {
