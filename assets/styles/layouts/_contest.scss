@@ -138,28 +138,4 @@
       }
     }
   }
-  &-term-list {
-    list-style: none;
-    margin-bottom: 0;
-    padding-left: 0;
-    font-size: 14px;
-    color: #616363;
-    li {
-      padding-left: 30px;
-      position: relative;
-      margin-bottom: 10px;
-      > i {
-        position: absolute;
-        left: 0;
-        top: 2px;
-        font-size: 18px;
-        &.glyphicon-remove-circle {
-          color: #dc4d4d;
-        }
-        &.glyphicon-ok-circle {
-          color: #05950d;
-        }
-      }
-    }
-  }
 }
