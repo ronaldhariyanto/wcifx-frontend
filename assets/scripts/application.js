@@ -14,6 +14,8 @@ $('.parallax-window--businnes').parallax({ imageSrc: 'images/bg-about-02.jpg' })
 
 $('.parallax-window--partnership').parallax({ imageSrc: 'images/bg-partnership.jpg' });
 
+$('.parallax-window--trading-demo').parallax({ imageSrc: 'images/bg-trading-01.jpg' });
+
 $('.parallax-window--trading-real').parallax({ imageSrc: 'images/bg-trading-02.jpg' });
 
 $('.our-services--homepage').parallax({
