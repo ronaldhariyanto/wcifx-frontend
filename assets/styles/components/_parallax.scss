@@ -13,7 +13,8 @@
     min-height: 307px;
     padding-top: 70px;
   }
-  &--trading-instrument {
+  &--trading-instrument,
+  &--trading-platforms {
     [class*=col-md] {
       padding-top: 15vh;
     }
