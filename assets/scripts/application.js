@@ -10,6 +10,7 @@ $('.parallax-window--partnership').parallax({ imageSrc: 'images/bg-partnership.j
 $('.parallax-window--trading-demo').parallax({ imageSrc: 'images/bg-trading-01.jpg' });
 $('.parallax-window--trading-real').parallax({ imageSrc: 'images/bg-trading-02.jpg' });
 $('.parallax-window--trading-instrument').parallax({ imageSrc: 'images/bg-trading-03.jpg' });
+$('.parallax-window--trading-payment').parallax({ imageSrc: 'images/bg-trading-04.jpg' });
 $('.parallax-window--trading-platforms').parallax({ imageSrc: 'images/bg-trading-05.jpg' });
 
 $('.our-services--homepage').parallax({

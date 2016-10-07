@@ -14,9 +14,10 @@
     padding-top: 70px;
   }
   &--trading-instrument,
-  &--trading-platforms {
+  &--trading-platforms,
+  &--trading-payment {
     [class*=col-md] {
-      padding-top: 15vh;
+      padding-top: 70px;
     }
     h2 {
       font-family: $font-family-roboto;
