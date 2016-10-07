@@ -155,6 +155,18 @@
       background-position: -10px -235px;
       @include icon-trading();
     }
+    &--opening {
+      background-position: -250px -235px;
+      @include icon-trading();
+    }
+    &--deposit {
+      background-position: -330px -235px;
+      @include icon-trading();
+    }
+    &--trading-open {
+      background-position: -410px -235px;
+      @include icon-trading();
+    }
   }
   &--seperator {
     background-image: url("../images/icon-seperator.png");
