@@ -16,7 +16,6 @@
     font-family: $font-family-roboto;
     font-weight: 300;
     font-size: 14px;
-    width: 90%;
     > thead > tr > th {
       border-bottom: 0;
       background-color: $orange;
@@ -32,8 +31,12 @@
       > td {
         border-top: none;
         padding: 15px 10px;
+        vertical-align: middle;
       }
     }
+  }
+  .trading-table-list--table {
+    width: 90%;
   }
 }
 
