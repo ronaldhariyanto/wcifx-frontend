@@ -48,6 +48,18 @@
 
 @font-face {
   font-family: 'roboto';
+  src: url('../fonts/roboto-lightitalic.eot');
+  src: url('../fonts/roboto-lightitalic.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/roboto-lightitalic.woff2') format('woff2'), 
+  url('../fonts/roboto-lightitalic.woff') format('woff'), 
+  url('../fonts/roboto-lightitalic.ttf') format('truetype'), 
+  url('../fonts/roboto-lightitalic.svg#roboto') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'roboto';
   src: url('../fonts/roboto-medium.eot');
   src: url('../fonts/roboto-medium.eot?#iefix') format('embedded-opentype'), 
   url('../fonts/roboto-medium.woff2') format('woff2'), 
@@ -62,11 +74,24 @@
   font-family: 'roboto';
   src: url('../fonts/roboto-black.eot');
   src: url('../fonts/roboto-black.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/roboto-black.woff2') format('woff'), 
   url('../fonts/roboto-black.woff') format('woff'), 
   url('../fonts/roboto-black.ttf') format('truetype'), 
   url('../fonts/roboto-black.svg#roboto') format('svg');
   font-weight: 700;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('../fonts/roboto-blackitalic.eot');
+  src: url('../fonts/roboto-blackitalic.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/roboto-blackitalic.woff2') format('woff'), 
+  url('../fonts/roboto-blackitalic.woff') format('woff'), 
+  url('../fonts/roboto-blackitalic.ttf') format('truetype'), 
+  url('../fonts/roboto-blackitalic.svg#roboto') format('svg');
+  font-weight: 700;
+  font-style: italic;
 }
 
 .font-montserrat {

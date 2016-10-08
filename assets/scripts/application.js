@@ -12,6 +12,8 @@ $('.parallax-window--trading-real').parallax({ imageSrc: 'images/bg-trading-02.j
 $('.parallax-window--trading-instrument').parallax({ imageSrc: 'images/bg-trading-03.jpg' });
 $('.parallax-window--trading-payment').parallax({ imageSrc: 'images/bg-trading-04.jpg' });
 $('.parallax-window--trading-platforms').parallax({ imageSrc: 'images/bg-trading-05.jpg' });
+$('.parallax-window--investment-01').parallax({ imageSrc: 'images/bg-investment.jpg' });
+$('.parallax-window--investment-02').parallax({ imageSrc: 'images/bg-investment-03.jpg' });
 
 $('.our-services--homepage').parallax({
   imageSrc: 'images/slide-home-bg2.jpg',

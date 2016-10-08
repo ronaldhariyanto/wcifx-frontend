@@ -1,0 +1,55 @@
+.investment {
+  &-header {
+    padding-top: 70px;
+    font-family: $font-family-roboto;
+    h1 {
+      font-weight: 700;
+      font-size: 16px;
+      color: $orange;
+      margin: 0 0 30px;
+    }
+    h2 {
+      color: $green;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 14px;
+      margin: 0 0 30px;
+    }
+    p {
+      font-weight: 700;
+      font-style: italic;
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+    .btn {
+      margin-top: 30px;
+    }
+  }
+  &-headline {
+    background: url('../images/bg-contest-02.png') no-repeat center bottom;
+    background-size: cover;
+    padding: 40px 0;
+    h3 {
+      font-family: $font-family-roboto;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 1.33;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+      margin: 0 0 20px;
+    }
+  }
+  &-benefit {
+    background: url('../images/bg-animate.png') no-repeat left 0px;
+    padding: 20px 0;
+  }
+  &-trader {
+    background: url('../images/bg-investment-02.jpg') no-repeat center bottom;
+    @media (min-width: $screen-md-min) {
+      height: 508px;
+    }
+    color: #fff;
+  }
+}
