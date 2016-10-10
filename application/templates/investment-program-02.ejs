@@ -43,24 +43,32 @@
         <div class="row">
           <div class="col-md-12">
             <h4 class="headline">Statistic <b>Table</b></h4>
-            <table class="table">
-              <thead>
+            <table class="table-no-border investment-statistic-table">
+              <thead class="investment-statistic-table--head">
                 <tr class="text-uppercase">
                   <th>Trader</th>
                   <th>Analytics</th>
                   <th>pps</th>
                   <th>Trades</th>
-                  <th>ROI Annualized</th>
+                  <th>ROI<br>Annualized</th>
                   <th>Avg PIPS</th>
                   <th>WIN %</th>
                   <th>MAX DD %</th>
                   <th>MAX DD PIPS</th>
-                  <th>MAX OPEN TRADER</th>
-                  <th>AVG TRADER TIME</th>
+                  <th>MAX<br>OPEN TRADER</th>
+                  <th>AVG<br>TRADER TIME</th>
                   <th>WEEK</th>
                   <th>FOLLOWERS</th>
                 </tr>
               </thead>
+              <tbody>
+                <% include components/table-investment-statistic %>
+                <% include components/table-investment-statistic %>
+                <% include components/table-investment-statistic %>
+                <% include components/table-investment-statistic %>
+                <% include components/table-investment-statistic %>
+                <% include components/table-investment-statistic %>
+              </tbody>
             </table>
           </div>
         </div>
