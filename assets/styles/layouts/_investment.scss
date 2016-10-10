@@ -47,9 +47,65 @@
   }
   &-trader {
     background: url('../images/bg-investment-02.jpg') no-repeat center bottom;
+    background-size: cover;
+    color: #fff;
     @media (min-width: $screen-md-min) {
       height: 508px;
     }
-    color: #fff;
+    &-box {
+      background-color: #05950d;
+      background-color: rgba(5, 149, 13, 0.7);
+      padding: 20px;
+      margin-top: 12vh;
+      border-radius: 0 20px 0 20px;
+    }
+    &-table {
+      margin-bottom: 0;
+      tbody {
+        >tr>td {
+          border-top: 0;
+          padding: 0;
+          vertical-align: middle;
+          &:first-child {
+            padding: 0 10px;
+          }
+        }
+      }
+      tfoot {
+        >tr>td {
+          border-top: 0;
+        }
+      }
+      dl {
+        font-family: $font-family-roboto;
+        font-weight: 300;
+        margin-bottom: 0;
+        border-left: 1px solid #fff;
+        padding: 0 10px;
+      }
+      dt {
+        font-weight: 300;
+        font-size: 14px;
+      }
+      dd {
+        font-size: 11px;
+      }
+    }
+    &__copy {
+      font-family: $font-family-roboto;
+      font-weight: 700;
+      font-size: 14px;
+      margin-top: 50%;
+      margin-bottom: 20px;
+    }
+    &__btn {
+      float: right;
+    }
+    &__title {
+      font-family: $font-family-roboto;
+      font-weight: 500;
+      font-size: 18px;
+      margin: 0 0 15px;
+    }
   }
 }

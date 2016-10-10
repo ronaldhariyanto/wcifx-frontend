@@ -13,6 +13,16 @@
       left: 0;
       top: 2px;
       font-size: 18px;
+      &.circle {
+        border: 1px solid;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 18px;
+        color: $orange;
+        top: 0;
+      }
       &.glyphicon-remove-circle {
         color: #dc4d4d;
       }
