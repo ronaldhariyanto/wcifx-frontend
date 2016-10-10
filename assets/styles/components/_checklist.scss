@@ -1,0 +1,34 @@
+.checklist {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  font-size: 14px;
+  color: #616363;
+  li {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 10px;
+    > i {
+      position: absolute;
+      left: 0;
+      top: 2px;
+      font-size: 18px;
+      &.circle {
+        border: 1px solid;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 18px;
+        color: $orange;
+        top: 0;
+      }
+      &.glyphicon-remove-circle {
+        color: #dc4d4d;
+      }
+      &.glyphicon-ok-circle {
+        color: #05950d;
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.benefit-container {
+  padding: 45px 0 40px;
+  min-height: 680px;
+}
+
+.benefit-desc {
+  font-family: $font-family-roboto;
+  font-size: 14px;
+  font-weight: 300;
+  color: #616363;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.benefit-feature {
+  padding: 30px 0;
+  &-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    &__item {
+      font-family: $font-family-roboto;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid transparent;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      position: relative;
+      &:after {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-top-color: $green;
+        border-width: 8px;
+        margin-left: -8px;
+        opacity: 0;
+      }
+      &:hover,
+      &:active {
+        border-color: $green;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &__label {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: roboto;
+    text-transform: uppercase;
+    line-height: 1;
+    b {
+      font-weight: 500;
+    }
+  }
+  &__value {
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 300;
+    margin-left: 10px;
+  }
+}
+
+.benefit-info {
+  &-list {
+    padding-left: 0;
+    list-style: none;
+  }
+  &__title {
+    font-family: $font-family-roboto;
+    font-weight: $font-light;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0 0 15px;
+    position: relative;
+    &:after {
+      display: inline-block;
+      content: "";
+      border-top: 1px solid #d7dada;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+    span {
+      display: inline-block;
+      background-color: #fff;
+      z-index: 2;
+      position: relative;
+      padding-right: 15px;
+    }
+  }
+  &__item {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #626262;
+    font-weight: 300;
+    .fa {
+      border: 1px solid #fcc638;
+      padding: 5px;
+      border-radius: 50%;
+      margin-right: 10px;
+      color: #fcc638;
+      width: 26px;
+      height: 26px;
+      text-align: center;
+    }
+  }
+}

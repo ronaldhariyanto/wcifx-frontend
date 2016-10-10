@@ -18,10 +18,10 @@ $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 $green:                 #05950d !default;
 $orange:                #fbb600 !default;           
 
-$brand-primary:         #05950d !default;
-$brand-success:         #05950d !default;
+$brand-primary:         $green !default;
+$brand-success:         $green !default;
 $brand-info:            #5bc0de !default;
-$brand-warning:         #fbb600 !default;
+$brand-warning:         $orange !default;
 $brand-danger:          #d9534f !default;
 
 
@@ -32,7 +32,7 @@ $brand-danger:          #d9534f !default;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            $gray !default;
+$text-color:            #616363 !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
@@ -83,7 +83,7 @@ $headings-color:          inherit !default;
 
 // [converter] If $bootstrap-sass-asset-helper if used, provide path relative to the assets load path.
 // [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
-$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootstrap/") !default;
+$icon-font-path: "../fonts/" !default;
 
 //** File name for all font files.
 $icon-font-name:          "glyphicons-halflings-regular" !default;
@@ -152,9 +152,9 @@ $table-border-color:            #ddd !default;
 
 $btn-font-weight:                normal !default;
 
-$btn-default-color:              #333 !default;
-$btn-default-bg:                 #fff !default;
-$btn-default-border:             transparent !default;
+$btn-default-color:              #fff !default;
+$btn-default-bg:                 transparent !default;
+$btn-default-border:             #fff !default;
 
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-warning !default;
@@ -188,50 +188,31 @@ $btn-border-radius-small:        0 !default;
 //
 //##
 
-//** `<input>` background color
 $input-bg:                       #fff !default;
-//** `<input disabled>` background color
 $input-bg-disabled:              $gray-lighter !default;
+$input-color:                    #7d7c7c !default;
+$input-border:                   #e4e4e4 !default;
 
-//** Text color for `<input>`s
-$input-color:                    $gray !default;
-//** `<input>` border color
-$input-border:                   #ccc !default;
+$input-border-radius:            0 !default;
+$input-border-radius-large:      0 !default;
+$input-border-radius-small:      0 !default;
+$input-border-focus:             #e4e4e4 !default;
 
-// TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
-//** Default `.form-control` border radius
-// This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
-$input-border-radius:            $border-radius-base !default;
-//** Large `.form-control` border radius
-$input-border-radius-large:      $border-radius-large !default;
-//** Small `.form-control` border radius
-$input-border-radius-small:      $border-radius-small !default;
 
-//** Border color for inputs on focus
-$input-border-focus:             #66afe9 !default;
+$input-color-placeholder:        #7d7c7c !default;
 
-//** Placeholder text color
-$input-color-placeholder:        #999 !default;
-
-//** Default `.form-control` height
-$input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
-//** Large `.form-control` height
+$input-height-base:              34px !default;
 $input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
-//** Small `.form-control` height
 $input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
 
-//** `.form-group` margin
-$form-group-margin-bottom:       15px !default;
+$form-group-margin-bottom:       20px !default;
 
 $legend-color:                   $gray-dark !default;
 $legend-border-color:            #e5e5e5 !default;
 
-//** Background color for textual input addons
 $input-group-addon-bg:           $gray-lighter !default;
-//** Border color for textual input addons
 $input-group-addon-border-color: $input-border !default;
 
-//** Disabled cursor for form controls and buttons.
 $cursor-disabled:                not-allowed !default;
 
 
@@ -455,17 +436,17 @@ $nav-pills-active-link-hover-color:         $component-active-color !default;
 //
 //##
 
-$pagination-color:                     $link-color !default;
+$pagination-color:                     #bcb9b9 !default;
 $pagination-bg:                        #fff !default;
-$pagination-border:                    #ddd !default;
+$pagination-border:                    #bcb9b9 !default;
 
-$pagination-hover-color:               $link-hover-color !default;
-$pagination-hover-bg:                  $gray-lighter !default;
-$pagination-hover-border:              #ddd !default;
+$pagination-hover-color:               #fff !default;
+$pagination-hover-bg:                  $orange !default;
+$pagination-hover-border:              $orange !default;
 
 $pagination-active-color:              #fff !default;
-$pagination-active-bg:                 $brand-primary !default;
-$pagination-active-border:             $brand-primary !default;
+$pagination-active-bg:                 $orange !default;
+$pagination-active-border:             $orange !default;
 
 $pagination-disabled-color:            $gray-light !default;
 $pagination-disabled-bg:               #fff !default;
@@ -795,14 +776,14 @@ $badge-border-radius:         10px !default;
 //
 //##
 
-$breadcrumb-padding-vertical:   8px !default;
-$breadcrumb-padding-horizontal: 15px !default;
+$breadcrumb-padding-vertical:   0 !default;
+$breadcrumb-padding-horizontal: 0 !default;
 //** Breadcrumb background color
-$breadcrumb-bg:                 #f5f5f5 !default;
+$breadcrumb-bg:                 transparent !default;
 //** Breadcrumb text color
-$breadcrumb-color:              #ccc !default;
+$breadcrumb-color:              $green !default;
 //** Text color of current page in the breadcrumb
-$breadcrumb-active-color:       $gray-light !default;
+$breadcrumb-active-color:       $orange !default;
 //** Textual separator for between breadcrumb elements
 $breadcrumb-separator:          "/" !default;
 
@@ -875,3 +856,26 @@ $dl-horizontal-offset:        $component-offset-horizontal !default;
 $dl-horizontal-breakpoint:    $grid-float-breakpoint !default;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter !default;
+
+//== Slick Carousel fonts path
+//
+//##
+
+$slick-font-path: "../fonts/" !default;
+$slick-loader-path: "../images/" !default;
+$slick-font-family: "FontAwesome" !default;
+$slick-arrow-color: white !default;
+$slick-prev-character: "\f104" !default;
+$slick-next-character: "\f105" !default;
+$slick-dot-character: "\f111" !default;
+
+
+//== Misc Variabel
+//
+//##
+
+$font-light: 300;
+$font-semibold: 500;
+$font-bold: 700;
+
+

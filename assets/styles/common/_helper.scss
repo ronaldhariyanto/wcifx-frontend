@@ -1,0 +1,72 @@
+// Helpers for margin ==> (s = small, m = medium, l = large)
+.mbs {
+  margin-bottom: 10px;
+}
+
+.mbm {
+  margin-bottom: 20px;
+}
+
+.mbl {
+  margin-bottom: 40px;
+}
+
+.mts {
+  margin-top: 10px;
+}
+
+.mtm {
+  margin-top: 20px;
+}
+
+.mtl {
+  margin-top: 40px;
+}
+
+// Helpers for padding ==> (s = small, m = medium, l = large)
+.pbs {
+  padding-bottom: 10px;
+}
+
+.pbm {
+  padding-bottom: 20px;
+}
+
+.pbl {
+  padding-bottom: 40px;
+}
+
+.pts {
+  padding-top: 10px;
+}
+
+.ptm {
+  padding-top: 20px;
+}
+
+.ptl {
+  padding-top: 40px;
+}
+
+.block-center {
+  margin: 0 auto;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.button-wrapper-2 {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: flex-start;
+  .btn {
+    flex: 1;
+    font-family: $font-family-roboto;
+    font-weight: 300;
+    font-size: 14px;
+    & + .btn {
+      margin-left: 10px;
+    }
+  }
+}

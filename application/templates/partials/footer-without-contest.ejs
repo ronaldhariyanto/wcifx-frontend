@@ -1,0 +1,61 @@
+
+  <footer class="footer">
+    <div class="container">
+      <% include ../components/footer/footer-partner %>
+      <hr>
+      <% include ../components/footer/footer-top-link %>
+      <hr>
+      <% include ../components/footer/footer-social-link %>
+      <hr>
+      <% include ../components/footer/footer-company-link %>
+      <hr>
+      <% include ../components/footer/footer-copyright %>
+    </div>
+  </footer>
+
+  <!-- Modal Login -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h2 class="modal-headtitle">Welcome Back!</h2>
+          <p class="modal-subtitle">Login to your account below</p>
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email-login" placeholder="Email address">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="pwd-login" placeholder="Password">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Remember me
+              </label>
+            </div>
+            <button type="button" class="btn btn-block btn-success">Login</button>
+            <button type="button" class="btn btn-block btn-info">Signup</button>
+          </form>
+          <a href="" class="forgot-password__link">Forgotten password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Register -->
+  <div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <h1>Register</h1>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>

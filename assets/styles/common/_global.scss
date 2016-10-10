@@ -1,4 +1,5 @@
-:focus {
+:focus,
+.btn:focus {
   outline: none;
 }
 
@@ -74,11 +75,95 @@
       color: $green;
       font-size: 14px;
       font-family: $font-family-roboto;
-
       &:focus,
       &:hover {
         color: #fff;
         background-color: $orange;
+      }
+    }
+  }
+}
+
+.headtitle {
+  @include headtitle();
+}
+
+.subheadtitle {
+  text-align: center;
+  color: #484848;
+  font-family: $font-family-roboto;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 5px 0 30px;
+}
+
+.headline {
+  @include headline();
+  display: flex;
+  flex-flow: wrap row;
+  .icons {
+    margin-left: 10px;
+  }
+}
+
+.subheadline {
+  @include subheadline();
+}
+
+.bg-grafity {
+  background-image: url("../images/bg-grafity.png"), url("../images/bg-phones.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 40px, center bottom;
+}
+
+.bg-graffic {
+  background-image: url("../images/bg-grafity.png");
+  background-repeat: no-repeat;
+  background-position: center 40px;
+}
+
+.seperator {
+  &--full {
+    .icons {
+      width: 100%;
+    }
+  }
+}
+
+.breadcrumb {
+  font-family: $font-family-roboto;
+  font-weight: $font-semibold;
+  font-size: 14px;
+  text-align: right;
+}
+
+.btn-primary {
+  &:hover,
+  &:focus {
+    background-color: $green;
+  }
+}
+
+.pagination {
+  margin: 40px 0 0;
+  > li {
+    a,
+    span {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    &:first-child {
+      > a,
+      > span {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+      }
+    }
+    &:last-child {
+      > a,
+      > span {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
       }
     }
   }

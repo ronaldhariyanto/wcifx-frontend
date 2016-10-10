@@ -4,28 +4,7 @@
   background-size: 54%;
   padding: 30px 0 25px;
   &_title {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 18px;
-    font-family: $font-family-roboto;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.7px;
-    margin-top: 0;
-    margin-bottom: 15px;
-    &:after {
-      display: block;
-      content: "";
-      background: url("../images/icon-footer.png") no-repeat center;
-      height: 30px;
-      width: 240px;
-      margin: 15px auto;
-    }
-    b {
-      font-weight: 600;
-      text-transform: lowercase;
-      font-size: 24px;
-    }
+    @include headtitle();
   }
   &-left {
     width: 66%;
@@ -78,7 +57,7 @@
   }
   .tab-content {
     >.tab-pane {
-      padding: 10px;
+      padding: 0 10px 0;
       background-color: #e7e6e6;
     }
   }
@@ -102,6 +81,14 @@
       color: #4d4d4d;
       font-size: 10px;
       font-weight: 400;
+
+      a {
+        color: #4d4d4d;
+        &:hover,
+        &:active {
+          color: lighten(#4d4d4d, 15%);
+        }
+      }
     }
   }
   &__table {

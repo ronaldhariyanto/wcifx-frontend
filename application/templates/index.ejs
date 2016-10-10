@@ -6,14 +6,36 @@
   <body>
     <% include partials/header %>
 
-    <ul id="scene">
-      <li class="layer" data-depth="0.00"><img src="images/bg-parrallax-01.jpg"></li>
-      <li class="layer" data-depth="0.20"><img src="images/bg-parrallax-01.jpg"></li>
-    </ul>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h1 class="text-center">Work List:</h1>
+          <div class="list-group">
+            <a class="list-group-item" href="homepage.html">Homepage <span class="badge">done</span></a>
+            <a class="list-group-item" href="about.html">Company Profile <span class="badge">done</span></a>
+            <a class="list-group-item" href="businnes.html">Businnes <span class="badge">done</span></a>
+            <a class="list-group-item" href="trading-real-account.html">Trading Real Account <span class="badge">done</span></a>
+            <a class="list-group-item" href="trading-demo-account.html">Trading Demo Account <span class="badge">done</span></a>
+            <a class="list-group-item" href="trading-instruments.html">Trading Instrument <span class="badge">done</span></a>
+            <a class="list-group-item" href="trading-platforms.html">Trading Platform <span class="badge">done</span></a>
+            <a class="list-group-item" href="trading-payment.html">Trading Payment <span class="badge">done</span></a>
+            <a class="list-group-item" href="investment-program-01.html">Investment Program #1</a>
+            <a class="list-group-item" href="investment-program-02.html">Investment Program #2</a>
+            <a class="list-group-item" href="contest.html">Contest <span class="badge">done</span></a>
+            <a class="list-group-item" href="partnership.html">Partner <span class="badge">done</span></a>
+            <a class="list-group-item" href="news-list-pages.html">News <span class="badge">done</span></a>
+            <a class="list-group-item" href="news-pages.html">News :: Detail <span class="badge">done</span></a>
+            <a class="list-group-item" href="diary-list-pages.html">Diary <span class="badge">done</span></a>
+            <a class="list-group-item" href="diary-pages.html">Diary :: Detail <span class="badge">done</span></a>
+            <a class="list-group-item" href="generate-password.html">Generate Password <span class="badge">done</span></a>
+            <a class="list-group-item" href="lost-password.html">Lost Password <span class="badge">done</span></a>
+            <a class="list-group-item" href="signal-list-pages.html">Signal List</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <% include partials/front-page %>
-
-    <% include partials/footer %>
+    <% include partials/footer-without-contest %>
 
     <% include partials/scripts %>
   </body>

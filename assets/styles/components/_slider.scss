@@ -1,0 +1,98 @@
+@mixin slider-arrow-home {
+  z-index: 2;
+  border: 1px solid #fff;
+  width: 50px;
+  height: 50px;
+  &:before {
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+  }
+  &:hover,
+  &:active {
+    background-color: #10941a;
+    border-color: #10941a;
+  }
+}
+
+.slider-homepage {
+  .slick-prev {
+    left: 0;
+    @include slider-arrow-home();
+  }
+  .slick-next {
+    right: 0;
+    @include slider-arrow-home();
+  }
+}
+
+.slider-homepage-item {
+  height: 480px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.silder-home-content {
+  margin-top: 35%;
+  h4 {
+    color: #05950d;
+    font-family: $font-family-roboto;
+    font-weight: $font-bold;
+    font-size: 30px;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+    line-height: 1.33;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.33;
+    color: #545353;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+  }
+}
+
+.slider-home-action {
+  .btn {
+    font-size: 14px;
+    margin-right: 20px;
+  }
+}
+
+.slider-nav {
+  background-color: #edefef;
+  &-row {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    > li {
+      padding-left: 0;
+      padding-right: 0;
+      a {
+        &.active,
+        &:hover,
+        &:active {
+          background-color: #fff;
+          transition: all 0.5s ease;
+        }
+      }
+    }
+  }
+  &__headtitle {
+    font-weight: 600;
+    color: #05950d;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: block;
+    padding: 30px 20px 20px;
+  }
+  &__sublabel {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: none;
+    color: #616363;
+  }
+}

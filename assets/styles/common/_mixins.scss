@@ -1,4 +1,4 @@
-@mixin clearfix() {
+@mixin clearfix {
   &:before,
   &:after {
     content: " ";
@@ -6,5 +6,51 @@
   }
   &:after {
     clear: both;
+  }
+}
+
+@mixin headtitle {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  font-family: $font-family-roboto;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  b {
+    font-weight: 700;
+  }
+}
+
+@mixin headline {
+  font-family: $font-family-roboto;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #787171;
+  margin-top: 0;
+  margin-bottom: 30px;
+  b {
+    font-weight: 700;
+  }
+}
+
+@mixin subheadline {
+  font-family: $font-family-roboto;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #787171;
+  margin-top: 0;
+  margin-bottom: 30px;
+  b {
+    font-weight: 700;
+  }
+  > .icons--seperator {
+    margin-left: 20px;
+    position: relative;
+    top: 4px;
   }
 }

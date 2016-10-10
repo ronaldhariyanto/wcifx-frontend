@@ -1,0 +1,62 @@
+@mixin slick-nav {
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $green;
+  &:before {
+    font-weight: 700;
+  }
+  &:focus, 
+  &:hover {
+    background-color: $green;
+  }
+}
+
+.our-services {
+  height: 340px;
+  background-color: transparent;
+  padding: 40px 0;
+  &-box {
+    width: 230px;
+    height: 130px;
+    text-align: center;
+    background-color: #fff;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    &:hover,
+    &:active {
+      background-color: $green;
+
+      .our-services__label {
+        color: #fff;
+      }
+    }
+  }
+  &__title {
+    @include headtitle();
+  }
+  &__icon {
+    padding: 20px 0 10px;
+  }
+  &__label {
+    color: #05950d;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    padding: 15px 0;
+  }
+}
+
+.slider-services {
+  padding-top: 30px;
+  .slick-prev {
+    @include slick-nav();
+    left: auto;
+    right: 50px;
+    
+  }
+  .slick-next {
+    @include slick-nav();
+    right: 10px;
+  }
+}

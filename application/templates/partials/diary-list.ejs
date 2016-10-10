@@ -1,0 +1,25 @@
+<div class="container news-container">
+  <div class="row">
+    <div class="col-md-4 news-content news-content--left">
+      <% include ../components/search-article %>
+
+      <% include popular-post-diary %>
+      
+      <% include ../components/category-tag-diary %>
+    </div>
+
+    <div class="col-md-8 news-content news-content--right">
+      <h2 class="news__title news__title--primary">NEWS Diary</h2>
+      <section class="diary-news" data-masonry='{ "itemSelector": ".news--items", "columnWidth": 300 }'>
+        <% include ../components/diary-news %>
+        <% include ../components/diary-news %>
+        <% include ../components/diary-news %>
+        <% include ../components/diary-news %>
+        <% include ../components/diary-news-slider %>
+        <% include ../components/diary-news-video %>
+      </section>
+      <% include ../components/spinner %>
+    </div>
+  </div>
+</div>
+

@@ -1,23 +1,46 @@
 @import "common/variables";
+@import "common/chartist-settings";
 
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
 @import "../../bower_components/select2/src/scss/core.scss";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+@import "../../bower_components/slick-carousel/slick/slick-theme.scss";
+@import "../../bower_components/chartist/dist/scss/chartist.scss";
 // endbower
 
 @import "common/mixins";
 @import "common/global";
 @import "common/fonts";
+@import "common/icons";
 
 @import "layouts/header";
 @import "layouts/footer";
-@import "layouts/front-page";
+@import "layouts/news";
 @import "layouts/contest-result";
+@import "layouts/about-us";
+@import "layouts/contest";
+@import "layouts/businnes";
+@import "layouts/partnership";
+@import "layouts/trading";
+@import "layouts/investment";
 
+@import "components/slider";
+@import "components/parallax";
 @import "components/search-article";
 @import "components/popular-post";
 @import "components/category-tag";
 @import "components/news";
 @import "components/spinner";
+@import "components/social-link";
+@import "components/our-services";
+@import "components/benefits";
+@import "components/generate-password";
+@import "components/question-box";
+@import "components/checklist";
+@import "components/flags";
+@import "components/table-trading";
+
+@import "common/helper";
