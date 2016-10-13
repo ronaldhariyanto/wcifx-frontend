@@ -17,11 +17,13 @@
     &__title {
       background-color: $orange;
       color: #fff;
-      text-align: center;
       font-family: roboto;
       font-weight: 600;
       font-size: 16px;
       padding: 6px 10px;
+      text-align: left;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
     }
   }
   .nav-tabs {
@@ -69,7 +71,7 @@
     color: #898686;
     th {
       color: #898686;
-      font-weight: 600;
+      font-weight: 500;
     }
     b {
       color: $green;

@@ -27,14 +27,14 @@
     display: block;
     margin: 15px 0 20px;
   }
-  &--computer {
+  &--computers {
     @include icon-large();
     background-position: -10px -95px;
     &.active {
       background-position: -10px -165px;
     }
   }
-  &--money {
+  &--moneys {
     @include icon-large();
     background-position: -80px -95px;
     &.active {
