@@ -17,7 +17,7 @@
     &__title {
       background-color: $orange;
       color: #fff;
-      font-family: roboto;
+      font-family: $font-family-roboto;
       font-weight: 600;
       font-size: 16px;
       padding: 6px 10px;
@@ -37,7 +37,7 @@
         border-radius: 0;
         border: none;
         color: #fff;
-        font-family: roboto;
+        font-family: $font-family-roboto;
         font-weight: 600;
         font-size: 16px;
         padding: 5px 20px;

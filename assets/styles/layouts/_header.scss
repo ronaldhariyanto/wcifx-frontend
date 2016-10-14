@@ -15,7 +15,7 @@
         color: #feffff;
         line-height: 28px;
         font-weight: 300;
-        font-family: roboto;
+        font-family: $font-family-roboto;
         padding-left: 20px;
         padding-right: 8px;
       }
@@ -61,7 +61,7 @@
   background-color: #fff;
   &__option {
     color: #05950d;
-    font-family: roboto;
+    font-family: $font-family-roboto;
     font-weight: 300;
   }
 }
