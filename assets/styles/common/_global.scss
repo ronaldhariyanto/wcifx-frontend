@@ -30,13 +30,15 @@
         line-height: 18px;
         padding-left: 35px;
         padding-right: 35px;
+        border-bottom: 3px solid #fff;
         @media (max-width: $screen-sm-max) {
           padding-right: 15px;
           padding-left: 15px;
         }
         &:hover,
         &:focus {
-          color: $orange
+          color: $orange;
+          border-color: $orange;
         }
       }
     }
@@ -55,6 +57,7 @@
       > a {
         background-color: transparent;
         color: $orange;
+        border-color: $orange;
         &:focus,
         &:hover {
           background-color: transparent;
@@ -67,7 +70,6 @@
 
 .dropdown-menu {
   padding: 0;
-  border-top: 3px solid $orange;
   > li {
     > a {
       padding: 0 20px;
@@ -83,6 +85,17 @@
       }
     }
   }
+}
+
+.caret-up {
+  width: 0; 
+  height: 0; 
+  border-left: 4px solid rgba(0, 0, 0, 0);
+  border-right: 4px solid rgba(0, 0, 0, 0);
+  border-bottom: 4px solid;
+  display: inline-block;
+  margin-left: 2px;
+  vertical-align: middle;
 }
 
 .headtitle {
