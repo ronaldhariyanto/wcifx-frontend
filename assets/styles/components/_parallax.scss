@@ -84,8 +84,10 @@
     font-size: 30px;
     margin-top: 0;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 0 rgba(125, 125, 135, 0.7);
   }
   &__desc {
+    font-family: $font-family-roboto;
     color: #fff;
     font-size: 18px;
     line-height: 1.3;
