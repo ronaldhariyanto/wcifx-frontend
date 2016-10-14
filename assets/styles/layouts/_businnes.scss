@@ -44,8 +44,8 @@
     a {
       display: block;
       text-transform: uppercase;
-      font-family: roboto;
-      font-weight: 300;
+      font-family: $font-family-roboto;
+      font-weight: 400;
       color: #a1a2a2;
       padding: 15px 0;
     }
@@ -78,7 +78,7 @@
   margin-bottom: 30px;
   li {
     font-size: 14px;
-    font-family: roboto;
+    font-family: $font-family-roboto;
     font-weight: 300;
     margin-bottom: 10px;
   }
