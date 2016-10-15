@@ -22,7 +22,6 @@ $('.our-services--homepage').parallax({
 
 $(document).ready(function() {
 
-
   $('.dropdown').hover(            
     function() {
       $('.dropdown-menu', this).stop( true, true ).fadeIn('fast');
@@ -72,6 +71,16 @@ $(document).ready(function() {
   $('.news-like__action').click(function() {
     $(this).toggleClass('active');
     $(this).find('i').toggleClass('fa-heart-o').toggleClass('fa-heart');
+  });
+
+  $('.glyphicon-eye-open').on('click', function(){
+    if($(this).attr('data-click-state') == 1) {
+      $(this).attr('data-click-state', 0);
+      $(this).siblings('#pwd-login').attr('type','password');
+    } else {
+      $(this).attr('data-click-state', 1);
+      $(this).siblings('#pwd-login').attr('type','text');
+    }
   });
 
 });
