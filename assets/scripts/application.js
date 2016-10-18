@@ -41,6 +41,11 @@ $(document).ready(function() {
 
   $('.slider-homepage').slick();
 
+  $('.slider-homepage').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    $('.slider-nav--action li a').removeClass('active');
+    $('.slider-nav--action li a').eq(parseInt(nextSlide)).addClass('active');
+  });
+
   $('.slider-nav--action li a').eq(0).addClass('active');
 
   $('.slider-nav--action li a').click(function(e) {
@@ -74,7 +79,7 @@ $(document).ready(function() {
   });
 
   $('.glyphicon-eye-open').on('click', function(){
-    if($(this).attr('data-click-state') == 1) {
+    if($(this).attr('data-click-state') === 1) {
       $(this).attr('data-click-state', 0);
       $(this).siblings('#pwd-login').attr('type','password');
     } else {
