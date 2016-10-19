@@ -38,19 +38,21 @@
       display: block;
       color: #fff;
       font-family: $font-family-roboto;
+      background: url('../images/bg-box-left.png') no-repeat left center, url('../images/bg-box-center.png') repeat-x left 3px, url('../images/bg-box-right.png') no-repeat right center;
       font-weight: 500;
       font-size: 16px;
-      border: 2px solid #fff;
       padding: 10px 20px;
       position: relative;
       &:after {
         display: block;
         content: "";
-        border-bottom: 2px solid #fff;
         position: absolute;
-        right: -4.4vw;
-        width: 4.5vw;
+        width: 70px;
+        height: 0;
+        right: -65px;
         top: 50%;
+        border-bottom: 2px solid #fff;
+        margin-top: -1px;
       }
     }
   }
@@ -70,11 +72,9 @@
   }
   &-payment-table {
     background: url(../images/bg-world.png) no-repeat 50%;
-
     .trading-table-list--table {
       background-color: #f7f7f7;
-      background-color: rgba(247,247,247,0.4);
-
+      background-color: rgba(247, 247, 247, 0.4);
       > tbody {
         > tr {
           &:hover {
@@ -82,7 +82,7 @@
           }
           &:nth-of-type(2n+1) {
             background-color: #e5ebef;
-            background-color: rgba(229,235,239,0.4);
+            background-color: rgba(229, 235, 239, 0.4);
           }
         }
       }
@@ -96,5 +96,4 @@
       color: #2a2a2a;
     }
   }
-  
 }
