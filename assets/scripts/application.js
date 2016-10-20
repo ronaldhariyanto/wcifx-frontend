@@ -20,6 +20,20 @@ $('.our-services--homepage').parallax({
   naturalWidth: '1440px'
 });
 
+// For adding active class on main navigation
+$(function(){
+  var url = window.location.pathname, 
+    urlRegExp = new RegExp(url.replace(/\/$/,'') + "$");
+    $('.navbar-nav a').each(function(){
+      if(urlRegExp.test(this.href.replace(/\/$/,''))){
+        $(this).parent().addClass('active');
+        if($(this).parent('.dropdown-menu')) {
+          $(this).parents('.dropdown').addClass('active');
+        }
+      }
+    });
+});
+
 $(document).ready(function() {
 
   $('.dropdown').hover(            
