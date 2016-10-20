@@ -126,6 +126,11 @@
   }
 }
 
+.headline-lower {
+  @include headline();
+  text-transform: capitalize;
+}
+
 .subheadline {
   @include subheadline();
 }
