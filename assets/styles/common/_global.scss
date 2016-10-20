@@ -102,6 +102,12 @@
   @include headtitle();
 }
 
+.headtitle-left {
+  @include headtitle();
+  text-align: left;
+  color: #070707;
+}
+
 .subheadtitle {
   text-align: center;
   color: #484848;
