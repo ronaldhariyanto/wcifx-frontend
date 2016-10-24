@@ -102,6 +102,12 @@
   @include headtitle();
 }
 
+.headtitle-left {
+  @include headtitle();
+  text-align: left;
+  color: #070707;
+}
+
 .subheadtitle {
   text-align: center;
   color: #484848;
@@ -118,6 +124,11 @@
   .icons {
     margin-left: 10px;
   }
+}
+
+.headline-lower {
+  @include headline();
+  text-transform: capitalize;
 }
 
 .subheadline {
