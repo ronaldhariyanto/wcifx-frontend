@@ -174,6 +174,13 @@
   }
 }
 
+.btn-success {
+  &:hover,
+  &:focus {
+    background-color: $orange;
+  }
+}
+
 .pagination {
   margin: 40px 0 0;
   > li {
