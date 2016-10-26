@@ -15,9 +15,12 @@ $('.parallax-window--trading-platforms').parallax({ imageSrc: 'images/bg-trading
 $('.parallax-window--investment-01').parallax({ imageSrc: 'images/bg-investment.jpg' });
 $('.parallax-window--investment-02').parallax({ imageSrc: 'images/bg-investment-03.jpg' });
 
+$('.trading-appstore--andro').parallax({ imageSrc: 'images/bg-trading-android.jpg', naturalWidth: 1440 });
+$('.trading-appstore--ios').parallax({ imageSrc: 'images/bg-trading-ios.jpg', naturalWidth: 1440 });
+
 $('.our-services--homepage').parallax({
   imageSrc: 'images/slide-home-bg2.jpg',
-  naturalWidth: '1440px'
+  naturalWidth: 1440
 });
 
 // For adding active class on main navigation
