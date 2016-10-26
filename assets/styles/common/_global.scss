@@ -135,6 +135,13 @@
   @include subheadline();
 }
 
+.headtitle-list {
+  font-family: $font-family-roboto;
+  font-size: 18px;
+  color: #4b4a4a;
+  margin-bottom: 30px;
+}
+
 .bg-grafity {
   background-image: url("../images/bg-grafity.png"), url("../images/bg-phones.png");
   background-repeat: no-repeat, no-repeat;
@@ -232,4 +239,10 @@
     position: relative;
     line-height: 1;
   }
+}
+
+.btn-box {
+  border: none;
+  background: none;
+  padding: 0;
 }
