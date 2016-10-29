@@ -39,33 +39,6 @@
   }
 }
 
-.select2-dropdown {
-  border: none;
-  border-radius: 0;
-  padding-top: 5px;
-  background-color: transparent;
-}
-
-.select2-container--default {
-  .select2-results__option[aria-selected=true] {
-    background-color: #fbb600;
-    color: #fff;
-  }
-  .select2-results__option--highlighted[aria-selected] {
-    background-color: #fbb600;
-    color: #fff;
-  }
-}
-
-.select2-results {
-  background-color: #fff;
-  &__option {
-    color: #05950d;
-    font-family: $font-family-roboto;
-    font-weight: 300;
-  }
-}
-
 .social-media {
   float: left;
   margin-bottom: 0;

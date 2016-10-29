@@ -53,7 +53,38 @@ $(document).ready(function() {
   );
 
   $('.select2').select2({
-    minimumResultsForSearch: Infinity
+    minimumResultsForSearch: Infinity,
+    dropdownCssClass: "select2-result-orange"
+  });
+
+  $('.select2-lang').select2({
+    minimumResultsForSearch: Infinity,
+    dropdownCssClass: "select2-result-lang"
+  })
+
+  $('.select2-month').select2({
+    minimumResultsForSearch: Infinity,
+    dropdownCssClass: "select2-result-grey"
+  });
+
+  $('.select2-day').select2({
+    minimumResultsForSearch: Infinity,
+    placeholder: "Days"
+  });
+
+  $('.select2-year').select2({
+    minimumResultsForSearch: Infinity,
+    placeholder: "Year"
+  });
+
+  $('.select2-country').select2({
+    minimumResultsForSearch: Infinity,
+    placeholder: "Country"
+  });
+
+  $('.select2-city').select2({
+    minimumResultsForSearch: Infinity,
+    placeholder: "City"
   });
 
   $('.slider-homepage').slick();

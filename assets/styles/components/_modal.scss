@@ -1,3 +1,22 @@
+@mixin modal-headtitle {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-family: $font-family-montserrat;
+  font-weight: normal;
+  color: #444444;
+}
+
+@mixin modal-subtitle {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: $font-family-montserrat;
+  font-weight: 400;
+  color: #444;
+}
+
 #loginModal {
   .modal-dialog {
     width: 390px;
@@ -11,21 +30,10 @@
     font-weight: 400;
   }
   .modal-headtitle {
-    margin: 0 0 20px;
-    text-align: center;
-    font-size: 21px;
-    text-transform: uppercase;
-    font-family: $font-family-montserrat;
-    font-weight: normal;
-    color: #444444;
+    @include modal-headtitle();
   }
   .modal-subtitle {
-    font-size: 13px;
-    text-align: center;
-    margin-bottom: 30px;
-    font-family: $font-family-montserrat;
-    font-weight: 400;
-    color: #444;
+    @include modal-subtitle();
   }
   .form-control {
     height: 50px;
@@ -51,5 +59,68 @@
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 20px;
+  }
+}
+
+
+#regModal {
+  .modal-dialog {
+    width: 570px;
+  }
+  .modal-content {
+    border-radius: 0;
+  }
+  .modal-body {
+    padding: 50px 50px 25px;
+    font-family: $font-family-roboto;
+    font-weight: 400;
+  }
+  .modal-headtitle {
+    @include modal-headtitle();
+  }
+  .modal-subtitle {
+    @include modal-subtitle();
+  }
+  form {
+    label {
+      font-family: $font-family-montserrat;
+      color: #444;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 400;
+      display: block;
+
+      &.remember-me {
+        font-weight: normal;
+        text-transform: none;
+        font-weight: 400;
+        text-transform: none;
+        font-family: georgia;
+        color: #777777;
+        font-size: 13px;
+      }
+    }
+  }
+  .form-control {
+    height: 50px;
+    padding: 10px 12px;
+    border: 1px solid #d7d7d7;
+  }
+  .select2-container--default {
+    .select2-selection--single {
+      border-radius: 0;
+      border: 1px solid #d7d7d7;
+      height: 50px;
+      .select2-selection__rendered {
+        color: #999999;
+        font-size: 13px;
+        line-height: 48px;
+      }
+      .select2-selection__arrow {
+        height: 48px;
+        width: 25px;
+        border-left: 1px solid #d7d7d7;
+      }
+    }
   }
 }

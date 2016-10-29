@@ -30,6 +30,7 @@
     }
     &--terms {
       background: url('../images/bg-contest-04.png') no-repeat center top;
+      background-size: cover;
       padding: 40px 0;
       p {
         font-size: 14px;
@@ -56,10 +57,12 @@
       
       a {
         color: #fff;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
         display: block;
         padding: 15px;
         position: relative;
-        background: url('../images/bg-box-left.png') no-repeat left center, url('../images/bg-box-center.png') repeat-x left 6px, url('../images/bg-box-right.png') no-repeat right center;
+        background: url('../images/bg-border-serparate.svg') no-repeat left top, url('../images/bg-border-serparate.svg') no-repeat right top;
         font-family: $font-family-roboto;
         font-weight: 500;
         font-size: 18px;
@@ -76,16 +79,16 @@
           content: "";
           border-bottom: 2px solid #fff;
           position: absolute;
-          width: 50px;
+          width: 67px;
           top: 50%;
-          right: -49px;
+          right: -57px;
           height: 0;
-          margin-top: -3px;
+          margin-top: 0px;
         }
       }
       
       &:last-child {
-        &:after {
+        a:after {
           display: none;
         }
       }
@@ -106,24 +109,26 @@
     justify-content: space-between;
     &__title {
       display: block;
-      border: 1px solid;
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff;
       color: #fff;
-      padding: 15px;
+      padding: 14px;
       font-family: $font-family-roboto;
       font-weight: 500;
       font-size: 16px;
       min-width: 200px;
       position: relative;
+      background: url('../images/bg-border-serparate.svg') no-repeat left top, url('../images/bg-border-serparate.svg') no-repeat right top;
       &:after {
         display: block;
         content: "";
         border-bottom: 2px solid #fff;
         position: absolute;
-        width: 45px;
+        width: 61px;
         top: 50%;
-        right: -46px;
+        right: -53px;
         height: 0;
-        margin-top: -3px;
+        margin-top: -1px;
       }
     }
     &__icons {

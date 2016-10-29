@@ -28,9 +28,11 @@
     }
     &__title {
       display: block;
-      border: 2px solid #fff;
-      padding: 15px;
-      font-size: 18px;
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      background: url('../images/bg-border-serparate.svg') no-repeat left top, url('../images/bg-border-serparate.svg') no-repeat right top;
+      padding: 13px 15px;
+      font-size: 14px;
       font-family: $font-family-roboto;
       font-weight: 500;
       position: relative;
@@ -40,9 +42,9 @@
         border-bottom: 2px solid #fff;
         position: absolute;
         top: 50%;
-        right: -32px;
+        right: -46px;
         z-index: 9;
-        width: 36px;
+        width: 55px;
       }
     }
   }
