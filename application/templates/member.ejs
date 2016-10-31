@@ -3,14 +3,58 @@
   <head>
     <% include partials/head %>
   </head>
-  <body>
+  <body class="member">
     <% include ./member-components/member-header %>
     <% include ./components/header/navigation-main %>
 
+    <div class="member-top--shadow"></div>
+    <div class="pbl ptm"></div>
+
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          MEMBER
+      <div class="row row-member">
+        <div class="col-md-5 col-member">
+          <article class="member-box">
+            <div class="member--status">
+              <textarea name="member-status" class="form-control" rows="5" placeholder="Create Status..."></textarea>
+            </div>
+          </article>
+          <article class="member-box member--wallet">
+            <header class="member-box-header">
+              <h4>My wallets</h4>
+              <a href="#" class="member-box__top-link">Create</a>
+            </header>
+            <main>
+              
+            </main>
+          </article>
+        </div>
+        <div class="col-md-7 col-member">
+          <article class="member-box member--news">
+            <header class="member-box-header">
+              <h4>MFX Broker NEWS</h4>
+              <a href="#" class="member-box__top-link">All news</a>
+            </header>
+            <main>
+              <ul class="member--news-list">
+                <li>
+                  <span class="member--news__time">01 Jan, 08:00</span>
+                  <span class="member--news__desc">3+2 promotion - invest profitably: bring your friends and get extra bonuses!</span>
+                </li>
+                <li>
+                  <span class="member--news__time">01 Jan, 08:00</span>
+                  <span class="member--news__desc">The margin conditions changing</span>
+                </li>
+              </ul>
+            </main>
+          </article>
+          <article class="member-box member--bonus">
+            <header class="member-box-header">
+              <h4>Available bonuses</h4>
+            </header>
+            <main>
+              
+            </main>
+          </article>
         </div>
       </div>
     </div>
