@@ -60,7 +60,7 @@ $(document).ready(function() {
   $('.select2-lang').select2({
     minimumResultsForSearch: Infinity,
     dropdownCssClass: "select2-result-lang"
-  })
+  });
 
   $('.select2-month').select2({
     minimumResultsForSearch: Infinity,
