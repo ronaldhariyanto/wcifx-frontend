@@ -43,12 +43,12 @@ $(document).ready(function() {
     function() {
       $('.dropdown-menu', this).stop( true, true ).fadeIn('fast');
       $(this).toggleClass('active');
-      $('span', this).toggleClass('caret caret-up');
+      $('.caret', this).removeClass('caret').addClass('caret-up');
     },
     function() {
       $('.dropdown-menu', this).stop( true, true ).fadeOut('fast');
       $(this).toggleClass('active');
-      $('span', this).toggleClass('caret caret-up');
+      $('.caret-up', this).removeClass('caret-up').addClass('caret');
     }
   );
 
